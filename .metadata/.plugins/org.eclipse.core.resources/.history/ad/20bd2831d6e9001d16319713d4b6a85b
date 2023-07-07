@@ -1,0 +1,34 @@
+package catalog;
+import java.util.ArrayList;
+
+import java_task.Deal;
+import utils.FileOperations;
+import utils.Parser;
+public class Catalog {
+	
+	private ArrayList<Deal> list = new ArrayList<Deal>(5000);
+	
+	public void loadFromFile(String path) {
+		ArrayList<String> rows = FileOperations.readFromFile(path);
+		for(String row : rows) {
+			Deal deal = Parser.parseRow(row);
+			list.add(deal);
+			System.out.println(deal);
+			System.out.println(row);
+		}
+	}
+	
+	
+	public void writeCatalogueToFile(String path) {
+		FileOperations.writeToFile(list, path);
+	}
+	
+	public void addDeal(Deal deal) {
+		list.add(deal);
+	}
+	public void printCatalog() {
+		for(Deal deal : list) {
+			System.out.println(deal.toString());
+		}
+	}
+}

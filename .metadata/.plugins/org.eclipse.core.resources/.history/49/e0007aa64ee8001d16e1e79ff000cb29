@@ -1,0 +1,25 @@
+package utils;
+
+import java.math.BigInteger;
+
+import java_task.Deal;
+
+public class Parser {
+	public static Deal parseRow(String row) {
+		String[] parts = row.split(", ");
+
+		return createDeal(parts);
+
+	}
+
+	private static Deal createDeal(String[] parts) {
+
+		Long date = Long.parseLong(parts[0]);
+		int mushroomType = Integer.parseInt(parts[1]);
+		int quantity = Integer.parseInt(parts[2].replace(" кг.", ""));
+		int quality = Integer.parseInt(parts[3].replace("-во", ""));
+		String person = parts[4];
+
+		return new Deal(date, mushroomType, quantity, quality, person);
+	}
+}

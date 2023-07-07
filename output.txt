@@ -1,0 +1,19 @@
+Line Added on: Wed May 10 06:56:58 EEST 2023
+01.01.2015 16:30, Other type of mushroom, 1105.0 kg., 1-st, Stoyan
+01.01.2015 16:30, Pechurka, 1055.1012 kg., 1-st, Stoyan
+01.01.2015 16:30, Sarnela, 1015.0 kg., 1-st, Stoyan
+01.01.2015 16:30, Manatarka, 205.0 kg., 1-st, Stoyan
+01.01.2015 16:30, Pachi Krak, 105.1 kg., 1-st, Stoyan
+01.01.2015 16:30, Kladnica, 10.12 kg., 1-st, Stoyan
+01.01.2015 16:30, Manatarka, 10105.0 kg., 2-nd, Dragan
+01.01.2015 16:30, Kladnica, 10105.0 kg., 2-nd, Dragan
+01.01.2015 16:30, Pechurka, 1105.0 kg., 2-nd, Dragan
+01.01.2015 16:30, Pachi Krak, 1015.0 kg., 2-nd, Dragan
+01.01.2015 16:30, Other type of mushroom, 1005.0 kg., 2-nd, Dragan
+01.01.2015 16:30, Sarnela, 100.0 kg., 2-nd, Dragan
+01.01.2015 16:30, Other type of mushroom, 10105.0 kg., 3-rd, Ivan
+01.01.2015 16:30, Pachi Krak, 1105.0 kg., 3-rd, Ivan
+01.01.2015 16:30, Sarnela, 1015.0 kg., 3-rd, Ivan
+01.01.2015 16:30, Pechurka, 1010.0 kg., 3-rd, Ivan
+01.01.2015 16:30, Kladnica, 1005.0 kg., 3-rd, Ivan
+01.01.2015 16:30, Manatarka, 101.0 kg., 3-rd, Ivan

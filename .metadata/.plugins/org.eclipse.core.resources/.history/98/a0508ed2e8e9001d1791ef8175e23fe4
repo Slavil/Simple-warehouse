@@ -1,0 +1,64 @@
+package java_task;
+
+public class Deal {
+	private String date;
+    private int mushroomType;
+    private int quantity;
+    private int quality;
+    private String person;
+	
+	public Deal(String date, int mushroomType, int quantity, int quality, String person) {
+		super();
+        this.date = date;
+		this.mushroomType = mushroomType;
+		this.quantity = quantity;
+		this.quality = quality;
+		this.person = person;
+	}
+	//charAt(0)
+	public String prepareString(String middle) {
+		return this.date + this.quantity + ", " + this.quality + ", " + this.person;
+		
+	}
+
+	
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public int getMushroomType() {
+		return mushroomType;
+	}
+
+	public void setMushroomType(int mushroomType) {
+		this.mushroomType = mushroomType;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public int getQuality() {
+		return quality;
+	}
+
+	public void setQuality(int quality) {
+		this.quality = quality;
+	}
+
+	public String getPerson() {
+		return person;
+	}
+
+	public void setPerson(String person) {
+		this.person = person;
+	}
+}

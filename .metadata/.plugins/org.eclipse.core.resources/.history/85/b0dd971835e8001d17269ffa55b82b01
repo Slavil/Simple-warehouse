@@ -1,0 +1,35 @@
+package utils;
+
+import java.util.Scanner;
+import java_task.Deal;
+
+public class Questions {
+	public static Deal consoleToDeal() {
+
+	Scanner scan = new Scanner(System.in);
+	// Въвеждаме датата и часа на сделката като цяло число във формат ГГГГММДДЧЧмм
+	System.out.println("Дата и час на сделката (във формат ГГГГММДДЧЧмм): ");
+	int date=scan.nextInt();
+	
+	// Въвеждаме кода на вида гъби (1-6)
+	System.out.println("Код на вида гъби (1 за манатарка, 2 за печурка, 3 за кладница, 4 за пачи крак, 5 за сърнела или 6 за друг вид гъба): ");
+	int mushroomType=scan.nextInt();
+	// Въвеждаме количеството на гъбите като цяло положително число
+	System.out.println("Количество (в грамове): ");
+	int quantity=scan.nextInt();
+	// Въвеждаме качеството на гъбите (1-3)
+	System.out.println("Качество на гъбите (1 за лошо, 2 за средно, 3 за добро): ");
+	int quality=scan.nextInt();
+	// Въвеждаме името на гъбаря
+	System.out.println("Име на гъбаря (до 50 символа): "); // Изчистваме новия ред след предходния вход
+	String person=scan.nextLine();
+	// Извеждаме всички въведени данни
+	scan.close();
+	return new Deal(date, mushroomType, quantity, quality, person);
+}
+
+
+
+
+}
+

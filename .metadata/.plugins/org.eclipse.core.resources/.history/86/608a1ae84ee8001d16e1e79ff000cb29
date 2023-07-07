@@ -1,0 +1,35 @@
+package utils;
+
+import java.util.Scanner;
+import java_task.Deal;
+
+public class Questions {
+	public static Deal consoleToDeal() {
+
+	Scanner scan = new Scanner(System.in);
+
+	System.out.println("Date and time (in format YYYYMMDDHHMM): ");
+	long date=scan.nextLong();
+	
+
+	System.out.println("Type of mushroom:(1 for Manatarka, 2 for Pechurka, 3 for Kladnica, 4 for Pachi krak, 5 for Sarnela or 6 for Other type of Mushroom): ");
+	int mushroomType=scan.nextInt();
+
+	System.out.println("Quantity (in grams): ");
+	int quantity=scan.nextInt();
+
+	System.out.println("Quality (1 for bad, 2 for middle, 3 for good): ");
+	int quality=scan.nextInt();
+
+	System.out.println("Mushroom man Name(up to 50 symbols): "); 
+	String person=scan.nextLine();
+
+	scan.close();
+	return new Deal(date, mushroomType, quantity, quality, person);
+}
+
+
+
+
+}
+

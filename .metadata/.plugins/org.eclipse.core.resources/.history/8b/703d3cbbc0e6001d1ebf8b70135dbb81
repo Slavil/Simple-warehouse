@@ -1,0 +1,15 @@
+package catalog;
+import java.util.ArrayList;
+
+import java_task.Deal;
+public class Catalog {
+	private ArrayList<Deal> list = new ArrayList<Deal>();
+	public void loadFromFile(String path) {
+		ArrayList<String> rows = FileOperations.readFromFile(path);
+		
+		for(String row : rows) {
+			AbstractCar car = Parser.parseRow(row);
+			list.add(car);
+		}
+	}
+}
